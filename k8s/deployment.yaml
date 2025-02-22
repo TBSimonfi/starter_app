@@ -16,4 +16,4 @@ spec:
       - name: myapp-container
         image: tbshor/tibi-myapp:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
