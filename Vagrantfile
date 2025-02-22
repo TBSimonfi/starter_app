@@ -1,7 +1,8 @@
 Vagrant.configure("2") do |config|
     config.vm.box = "ubuntu/bionic64"
-    
-    # Other configurations...
+  
+    # Use Bridged Network Adapter
+    config.vm.network "public_network", bridge: "en0: Wi-Fi (AirPort)"
   
     # Provision script to start Minikube
     config.vm.provision "shell", inline: <<-SHELL
